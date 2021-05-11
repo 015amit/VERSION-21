@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            /*background-color: green;*/
+            background-image: url("static/images/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .footer {
+            position: relative;
+            width: 100%;
+            height: 10%;
+            margin-top: 70%;
+            margin-bottom: 0%;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-around;
+        }
+        .main .four{
+            display: flex;
+
+        }
+        .last{
+            text-align: center;
+        }
+        h5{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 14px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="footer">
+        <div class="main">
+            <div class="one">
+                <h5>Get to know us</h5>
+                <p>About Us<br>
+                Team<br>
+                Memories</p>
+            </div>
+            <div class="two">
+                <h5>Explore</h5>
+                <p>Promotional Events<br>
+                Main Events<br>
+                Workshops</p>
+            </div>
+            <div class="three">
+                <h5>Contact Us</h5>
+                <p>Email: version21@gmail.com<br>
+                Jane Doe: 789654321<br>
+                John Doe: 987654321</p>
+            </div>
+            <div class="four">
+                <img src="nittlogo.png" alt="NITT Logo">
+                <p><br>National Institute<br>
+                    of Technology,<br>
+                    Tiruchirappalli.</p>
+            </div>
+        </div>
+        <div class="last">
+            <hr>
+            <p> &copy; Copyrights 2021- VERSION EEC. All rights reserved</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+        var setVanta = ()=>{
+        if (window.VANTA) window.VANTA.NET({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xe83fff,
+          points: 13.00,
+          maxDistance: 25.00,
+          spacing: 16.00
+        })
+        }
+        _strk.push(function() {
+          setVanta()
+          window.edit_page.Event.subscribe( "Page.beforeNewOneFadeIn", setVanta )
+        })
+        </script>
+</body>
+
+</html>

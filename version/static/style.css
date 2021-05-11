@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  height: 100vh;
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 500px;
+  height: 320px;
+  top: 10%;
+  left: 20%;
+  opacity: 0;
+  transform: translate(-20%, -25%);
+  animation: come 0.5s ease-out forwards 7.7s;
+}
+@keyframes come {
+  100% {
+    opacity: 1;
+  }
+}
+.block {
+  z-index: 1;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background: #0a0a0a;
+  bottom: 16px;
+  right: 16px;
+}
+.loading-page {
+  height: 100vh;
+  width: 100%;
+  background: #111111;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide 1s cubic-bezier(0.77, 0, 0.87, 0.5) forwards 6.3s;
+}
+@keyframes slide {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.circular {
+  height: 100px;
+  width: 100px;
+  transform: scale(2);
+  position: relative;
+  animation: out 0.8s ease forwards 6s;
+}
+@keyframes out {
+  100% {
+    opacity: 0;
+  }
+}
+.circular .inner {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  height: 96px;
+  width: 96px;
+  transform: translate(-50%, -50%);
+  background: #111111;
+  border-radius: 100%;
+}
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #111111;
+  border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: linear-gradient(90deg, rgb(178, 115, 238), rgb(64, 14, 110));
+}
+.circle .left .progress {
+  z-index: 6;
+  animation: left 3s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  z-index: 8;
+  transform: rotate(180deg);
+}
+.circle .right .progress {
+  animation: right 3s ease-out both;
+  animation-delay: 3s;
+}
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.start-text {
+  color: rgb(224, 224, 224);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+  font-size: 0px;
+  font-weight: 600;
+  opacity: 0;
+  animation: appear 3s ease forwards 0.8s;
+}
+@keyframes appear {
+  100% {
+    opacity: 1;
+    font-size: 40px;
+    text-shadow: 0 0 4px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+      0 0 5px #ae11ec, 0 0 5px #8a2be2, 0 0 5px #8a1ae6, 0 0 5px #a223d4,
+      0 0 5px #a026d8;
+  }
+}
+.menu-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+}
+.links {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  list-style: none;
+}
+.link-item {
+  opacity: 0;
+  position: relative;
+  padding-left: 50px;
+}
+.link-item a {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: rgb(142, 43, 235);
+  transition: all 0.2s ease-in-out;
+  background: #161616;
+}
+a::before {
+  content: "";
+  height: 3px;
+  width: 0vw;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: rgb(187, 129, 241);
+  z-index: -1;
+  transition: width 0.4s ease-out;
+}
+a:hover::before {
+  width: 100%;
+}
+.link-item a:hover {
+  color: rgba(236, 236, 236, 0.822);
+  font-size: 65px;
+  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+    0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
+    0 0 20px #a026d8;
+}
+
+.humberger {
+  margin: 25px 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.humberger:hover {
+  border-color: whitesmoke;
+  box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
+    0 0 8px #ae11ec, 0 0 5px #8a2be2, 0 0 8px #8a1ae6, inset 0 0 5px #a223d4,
+    0 0 8px #a026d8;
+}
+.line1,
+.line2 {
+  height: 2px;
+  width: 27px;
+  background: rgba(233, 233, 233, 0.788);
+  margin-bottom: 5px;
+  transition: all 0.3s ease-out;
+}
+.line2 {
+  margin: 5px 0px 0px;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin: 25px 45px;
+  color: whitesmoke;
+  text-shadow: 0 0 5px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+    0 0 10px #ae11ec, 0 0 10px #8a2be2, 0 0 10px #8a1ae6, 0 0 5px #a223d4,
+    0 0 10px #a026d8;
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: reveal 0.6s ease-in-out forwards 7.7s;
+}
+@keyframes reveal {
+  100% {
+    transform: translateY(0px) rotate(0);
+    opacity: 1;
+  }
+}
+
+.svg-left {
+  position: absolute;
+  left: -15%;
+  top: 10%;
+  opacity: 0.9;
+  transform: scale(0.8) rotate(0deg);
+
+  animation: svg-stroke 5s linear infinite alternate-reverse;
+}
+.svg-right {
+  position: absolute;
+  right: -10%;
+  bottom: -5%;
+  opacity: 0.9;
+  transform: rotate(90deg);
+
+  animation: svg-stroke 10s linear infinite alternate-reverse;
+}
+
+@keyframes svg-stroke {
+  0% {
+    stroke-dasharray: 0%;
+    stroke-dashoffset: 0%;
+  }
+  10% {
+    stroke-dasharray: 5%;
+    stroke-dashoffset: 5%;
+  }
+  20% {
+    stroke-dasharray: 10%;
+    stroke-dashoffset: 10%;
+  }
+  30% {
+    stroke-dasharray: 20%;
+    stroke-dashoffset: 20%;
+  }
+  40% {
+    stroke-dasharray: 30%;
+    stroke-dashoffset: 30%;
+  }
+  50% {
+    stroke-dasharray: 50%;
+    stroke-dashoffset: 50%;
+  }
+  60% {
+    stroke-dasharray: 60%;
+    stroke-dashoffset: 60%;
+  }
+  70% {
+    stroke-dasharray: 70%;
+    stroke-dashoffset: 70%;
+  }
+  90% {
+    stroke-dasharray: 90%;
+    stroke-dashoffset: 90%;
+  }
+  100% {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+  }
+}

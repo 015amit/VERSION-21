@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins"; */
+}
+body {
+   /* background: radial-gradient(rgb(20, 1, 88), #001129); */ 
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Cairo", sans-serif;
+  background: url(../images/tech5.jpg) no-repeat center fixed;
+  backdrop-filter: blur(1px);
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0,0,0,0.5),20%); */
+  background-size: cover;
+  /* background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 10%); */
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 320px;
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -25%);
+  animation: come 0.5s ease-out forwards 7.7s;
+}
+@keyframes come {
+  100% {
+    opacity: 1;
+  }
+}
+.block {
+  z-index: 1;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background: #0a0a0a;
+  bottom: 16px;
+  right: 16px;
+}
+.loading-page {
+  height: 100vh;
+  width: 100%;
+  background: #111111;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide 1s cubic-bezier(0.77, 0, 0.87, 0.5) forwards 6.3s;
+}
+@keyframes slide {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.circular {
+  height: 100px;
+  width: 100px;
+  transform: scale(2);
+  position: relative;
+  animation: out 0.8s ease forwards 6s;
+}
+@keyframes out {
+  100% {
+    opacity: 0;
+  }
+}
+.circular .inner {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  height: 96px;
+  width: 96px;
+  transform: translate(-50%, -50%);
+  background: #111111;
+  border-radius: 100%;
+}
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #111111;
+  border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: linear-gradient(90deg, rgb(178, 115, 238), rgb(64, 14, 110));
+}
+.circle .left .progress {
+  z-index: 6;
+  animation: left 3s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  z-index: 8;
+  transform: rotate(180deg);
+}
+.circle .right .progress {
+  animation: right 3s ease-out both;
+  animation-delay: 3s;
+}
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.start-text {
+  color: rgb(224, 224, 224);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+  font-size: 0px;
+  font-weight: 600;
+  opacity: 0;
+  animation: appear 3s ease forwards 0.8s;
+}
+@keyframes appear {
+  100% {
+    opacity: 1;
+    font-size: 40px;
+    text-shadow: 0 0 4px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+      0 0 5px #ae11ec, 0 0 5px #8a2be2, 0 0 5px #8a1ae6, 0 0 5px #a223d4,
+      0 0 5px #a026d8;
+  }
+}
+.menu-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* left: -2%; */
+  background: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100vh);
+  z-index: 90;
+}
+.links {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  list-style: none;
+  left: -3%;
+  position: relative;
+}
+.link-item {
+  opacity: 0;
+
+  margin: 0 auto;
+}
+.link-item a {
+  text-decoration: none;
+  font-size: 30px;
+
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  background: #161616;
+  z-index: 99;
+}
+
+.link-item a:hover {
+  border-bottom: 2px solid #ff00e6;
+  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+    0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
+    0 0 20px #a026d8;
+}
+
+.svg-right {
+  position: absolute;
+  right: 0%;
+  opacity: 0.9;
+  /* display: none; */
+  bottom: -10%;
+  transform: rotate(0deg) scale(1.1);
+  stroke-dasharray: 90%;
+
+  animation: svg-stroke 3s linear infinite alternate-reverse;
+}
+
+@keyframes svg-stroke {
+  0% {
+    stroke-dashoffset: 0%;
+  }
+  10% {
+    stroke-dashoffset: 5%;
+  }
+  20% {
+    stroke-dashoffset: 10%;
+  }
+  30% {
+    stroke-dashoffset: 20%;
+  }
+  40% {
+    stroke-dashoffset: 30%;
+  }
+  50% {
+    stroke-dashoffset: 50%;
+  }
+  60% {
+    stroke-dashoffset: 60%;
+  }
+  70% {
+    stroke-dashoffset: 70%;
+  }
+  90% {
+    stroke-dashoffset: 90%;
+  }
+  100% {
+    stroke-dashoffset: 97%;
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tagline {
+  line-height: 1.5;
+  /* color: rgb(166, 112, 218); */
+  color: white;
+  max-width: 500px;
+}
+
+
+.V {
+  color: whitesmoke;
+  font-size: 100px;
+  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 8px rgb(213, 161, 255),
+    0 0 10px #ae11ec, 0 0 10px #8a2be2, 0 0 10px #8a1ae6, 0 0 5px #a223d4,
+    0 0 10px #a026d8;
+}
+
+@media screen and (max-width: 768px) {
+  .svg-right {
+    transform: scale(0.6) rotate(90deg);
+    left: -18%;
+    top: 76%;
+    height: 200px;
+    width: 250px;
+  }
+  
+  .hero {
+    top: 5%;
+    transform: scale(0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    width: 100%;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .add {
+    margin-bottom: 0;
+  }
+
+  
+}
+
+.main {
+  margin-top: -3%;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+
+  font-family: "Cairo", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-icon {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+}
+
+.add {
+  margin: 3rem 1.5rem;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.add i {
+  font-size: 28px;
+  color: rgb(59, 0, 73);
+  transition: 0.5s;
+}
+
+.all-link {
+  display: none;
+  transition: 1s;
+}
+
+.all-link ul {
+  display: flex;
+}
+
+.all-link ul li {
+  font-size: 27px;
+  list-style: none;
+  color: rgb(3, 3, 99);
+  height: 7vh;
+  width: 7vh;
+  border-radius: 50%;
+  background: white;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.all-link ul li i:hover {
+  font-size: 25px;
+}
+
+.bar {
+  width: 50%;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.bar ul {
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.bar ul li {
+  list-style: none;
+}
+
+
+.bar ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+ 
+}
+.bar ul li:hover {
+  border-bottom: 2px solid #ff00e6;
+  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
+    0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
+    0 0 20px #a026d8;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+#text {
+  margin: 3rem 0;
+}
+
+#soon {
+  font-family: "Sacramento", cursive;
+  color: #ff00e6;
+  font-size: 35px;
+font-weight: 600;
+  z-index: 9999;
+  line-height: 1;
+  animation: text-flicker 3s linear infinite;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  77% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  100% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+
+
+
+        
+
+        .event{
+          color: white;
+        }
+
+
+        .glitch {
+          position: relative;
+          margin: 0 auto;
+          color: #fff;
+          font-size: 100px;
+          
+          font-weight: 600;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 0.01em;
+          transform: scale3d(1, 1, 1);
+              text-shadow: 2px 6px 8px black;
+        }
+
+        .glitch::before,
+        .glitch::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          overflow: hidden;
+          /* background: #333; */
+          color: #fff;
+          clip: rect(0, 900px, 0, 0);
+        }
+
+        .glitch::before {
+          left: 7px;
+          text-shadow: 1px 0 green;
+          animation: glitch-effect 3s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+          left: 3px;
+          text-shadow: -1px 0 red;
+          animation: glitch-effect 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-effect {
+          0% {
+            clip: rect(55px, 9999px, 66px, 0);
+          }
+
+          5% {
+            clip: rect(90px, 9999px, 40px, 0);
+          }
+
+          10% {
+            clip: rect(56px, 9999px, 41px, 0);
+          }
+
+          15% {
+            clip: rect(78px, 9999px, 39px, 0);
+          }
+
+          20% {
+            clip: rect(81px, 9999px, 13px, 0);
+          }
+
+          25% {
+            clip: rect(91px, 9999px, 68px, 0);
+          }
+
+          30% {
+            clip: rect(58px, 9999px, 93px, 0);
+          }
+
+          35% {
+            clip: rect(46px, 9999px, 76px, 0);
+          }
+
+          40% {
+            clip: rect(16px, 9999px, 1px, 0);
+          }
+
+          45% {
+            clip: rect(48px, 9999px, 56px, 0);
+          }
+
+          50% {
+            clip: rect(55px, 9999px, 49px, 0);
+          }
+
+          55% {
+            clip: rect(24px, 9999px, 87px, 0);
+          }
+
+          60% {
+            clip: rect(49px, 9999px, 96px, 0);
+          }
+
+          65% {
+            clip: rect(70px, 9999px, 82px, 0);
+          }
+
+          70% {
+            clip: rect(31px, 9999px, 32px, 0);
+          }
+
+          75% {
+            clip: rect(49px, 9999px, 67px, 0);
+          }
+
+          80% {
+            clip: rect(5px, 9999px, 69px, 0);
+          }
+
+          85% {
+            clip: rect(65px, 9999px, 26px, 0);
+          }
+
+          90% {
+            clip: rect(72px, 9999px, 87px, 0);
+          }
+
+          95% {
+            clip: rect(100px, 9999px, 79px, 0);
+          }
+
+          100% {
+            clip: rect(2px, 9999px, 21px, 0);
+          }
+        }
