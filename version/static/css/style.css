@@ -1,0 +1,75 @@
+.bar-item {
+  text-decoration: none;
+  color: white;
+}
+
+#logo-name {
+  margin-left: 0.5rem;
+  font-size: 15px;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  margin: 1rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.humberger {
+  margin: 35px 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  z-index: 99;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
+    0 0 8px #ae11ec, 0 0 5px #8a2be2, 0 0 8px #8a1ae6, inset 0 0 5px #a223d4,
+    0 0 8px #a026d8;
+}
+
+.line1,
+.line2 {
+  height: 2px;
+  width: 27px;
+  background: rgba(233, 233, 233, 0.788);
+  margin-bottom: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.line2 {
+  margin: 5px 0px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    display: none;
+  }
+
+  .humberger {
+    display: flex;
+  }
+
+  .logo {
+    width: 50%;
+
+    z-index: 0;
+  }
+
+  #logo-name {
+    font-size: 10px;
+  }
+}

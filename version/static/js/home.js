@@ -1,51 +1,18 @@
-const menu_btn = document.querySelector(".humberger");
+var add1 = document.querySelector("#add1");
+  var add2 = document.querySelector("#add2");
+  var links = document.querySelector(".all-link");
+  var svg = document.querySelector(".svg-right");
 
-const animation = gsap.timeline({ paused: true, reversed: true });
-animation
-  .to(".menu-container", {
-    y: 0,
-    duration: 0.8,
-    ease: "expo.inOut",
-  })
-  .to(
-    ".line1",
-    {
-      marginBottom: "-1px",
-      ease: "Power2.inOut",
-      duration: 0.3,
-    },
-    "-=0.7"
-  )
-  .to(
-    ".line2",
-    {
-      marginTop: "-1px",
-      ease: "Power2.inOut",
-      duration: 0.3,
-    },
-    "-=0.7"
-  )
-  .to(".line2", {
-    rotation: 90,
-    ease: "Power2.Out",
-    duration: 0.4,
-  })
-  .to(".humberger", {
-    rotation: 45,
-    ease: "Power2.Out",
-    duration: 0.4,
-  })
-  .to(
-    ".link-item",
-    {
-      opacity: 1,
-      duration: 0.7,
-      ease: "Power2.inOut",
-      stagger: 0.15,
-    },
-    "-=0.8"
-  );
+  add1.addEventListener("click", () => {
+    add1.style.display = "none";
+    add2.style.display = "flex";
+    links.style.display = "flex";
+  });
 
-menu_btn.addEventListener("click", () =>
-  animation.reversed() ? animation.play() : animation.reverse()
-);
+  add2.addEventListener("click", () => {
+    add2.style.display = "none";
+    add1.style.display = "flex";
+    links.style.display = "none";
+  });
+
+

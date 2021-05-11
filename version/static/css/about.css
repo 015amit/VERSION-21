@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
 * {
   margin: 0;
@@ -7,16 +6,15 @@
   font-family: "Cairo", sans-serif;
 }
 
+/* BODY STARTS */
 body {
   justify-content: center;
   align-items: center;
- background: url(../images/tech5.jpg) no-repeat center fixed;
+ background: url(../images/bg.svg) center fixed rgba(0, 0, 0, 0.911);
  
-  background-size: cover;
   background-attachment: fixed;
-  /* backdrop-filter: blur(2px); */
-
-  /* background: radial-gradient(rgb(20, 1, 88), #001129); */
+  background-blend-mode: overlay;
+  background-position: center;
 }
 
 .container {
@@ -31,14 +29,14 @@ body {
   position: relative;
   width: 100%;
 
-  background: rgba(7, 6, 6, 0.301);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  margin-top: 1%;
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 5px 20px rgba(255, 255, 255, 0.363); */
   align-items: center;
   justify-content: space-evenly;
   padding: 0rem;
@@ -80,9 +78,9 @@ p {
 }
 
 h1 {
-  font-family: "Sacramento", cursive;
+  font-family: "Cairo", sans-serif;
   margin-top: 5%;
-  font-size: 65px;
+  font-size: 50px;
 
   text-align: center;
   color: #fff;
@@ -104,13 +102,13 @@ h1 {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6,
+      0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6,
+      0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
   }
 }
 
@@ -119,7 +117,7 @@ h2 {
   animation: mover 2s infinite alternate;
 }
 
-
+/* FOOTER */
 
 .footer {
   position: relative;
@@ -152,6 +150,7 @@ h2 {
   font-size: 15px;
 }
 
+/* MENU BAR STARTS */
 .menu-container {
   height: 100vh;
   width: 100%;
@@ -202,13 +201,8 @@ h2 {
 }
 
 
+/* RESPONSIVE NAV BAR */
 
-@media screen and (max-width: 768px) {
-  .menu-container {
-    width: 100%;
-  }
-
-}
 
 .bar {
   width: 50%;
@@ -237,4 +231,11 @@ h2 {
   text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
     0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
     0 0 20px #a026d8;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container {
+    width: 100%;
+  }
+
 }

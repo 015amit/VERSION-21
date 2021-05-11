@@ -1,65 +1,47 @@
 {% extends "base.html" %} {% block header %}
 
 <title>Document</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-  crossorigin="anonymous" />
 <link rel="stylesheet" href="static/css/home.css" />
 
 {% endblock %} {% block content %}
-<div class="main">
-  <div id="text">
-    <h1 id="soon">
-      <span id="offset">C</span>om<span id="offset">ing</span>S<span id="offset">oon!</span>
-    </h1>
-  </div>
 
-  <div class="link-icon">
-    <div class="all-link">
-      <ul>
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-instagram-square"></i></li>
-        <li><i class="fab fa-youtube-square"></i></li>
-      </ul>
+<div id="particles-js">
+  <div class="main">
+    <div id="text">
+      <h1 id="soon">
+        <span id="offset">C</span>om<span id="offset">ing</span> S<span id="offset">oon!</span>
+      </h1>
     </div>
 
-    <div class="add">
-      <i class="fas fa-bezier-curve" id="add1"></i>
-      <i class="fas fa-times" style="display: none" id="add2"></i>
-    </div>
-  </div>
+    <div class="link-icon">
+      <div class="all-link">
+        <ul>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-instagram-square"></i></li>
+          <li><i class="fab fa-youtube-square"></i></li>
+        </ul>
+      </div>
 
-  <!-- <div class="wrapper">
-    <div class="icon facebook">
-      <div class="tooltip">Facebook</div>
-      <span><i class="fab fa-facebook-f"></i></span>
-    </div>
-
-    <div class="icon instagram">
-      <div class="tooltip">Instagram</div>
-      <span><i class="fab fa-instagram"></i></span>
+      <div class="add">
+        <i class="fas fa-bezier-curve" id="add1"></i>
+        <i class="fas fa-times" style="display: none" id="add2"></i>
+      </div>
     </div>
 
-    <div class="icon youtube">
-      <div class="tooltip">YouTube</div>
-      <span><i class="fab fa-youtube"></i></span>
-    </div>
-  </div> -->
 
-  <div class="hero">
-    <h1>
-      <span class="V" style="font-size: 40px; text-align: center">
-        <img src="static/images/logo.png" height="80px" width="220px" />
-      </span>
-    </h1>
-    <p class="tagline" style="text-align: center">presents</p>
-    <!-- <h1><span class="V">DEXTRIX</span></h1> -->
-    <h1 class="glitch" data-text="DECONSENTRO">DECONSENTRO</h1>
-    <div class="css-typing">
-      <p class="event" id="text_1">
-        Divide To Conquer
-      </p>
+    <div class="hero">
+      <h1>
+        <span class="V" style="font-size: 40px; text-align: center">
+          <img src="static/images/logo.png" height="80px" width="220px" />
+        </span>
+      </h1>
+      <p class="tagline" style="text-align: center">presents</p>
+      <h1 class="glitch" data-text="DECONSENTRO">DECONSENTRO</h1>
+      <div class="css-typing">
+        <p class="event" id="text_1">
+          Divide To Conquer
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -194,29 +176,10 @@
     </linearGradient>
   </defs>
 </svg>
-<script>
-  var add1 = document.querySelector("#add1");
-  var add2 = document.querySelector("#add2");
-  var links = document.querySelector(".all-link");
-  var svg = document.querySelector(".svg-right");
 
-  add1.addEventListener("click", () => {
-    add1.style.display = "none";
-    add2.style.display = "flex";
-    links.style.display = "flex";
-  });
 
-  add2.addEventListener("click", () => {
-    add2.style.display = "none";
-    add1.style.display = "flex";
-    links.style.display = "none";
-  });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-  integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
-  crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="static/js/home.js"></script>
+<script src="static/js/particles.js"></script>
+<script src="static/js/app.js"></script>
 
 {% endblock %}
