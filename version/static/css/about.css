@@ -1,214 +1,163 @@
-
 * {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
 }
 
+
 /* BODY STARTS */
+
 body {
-  justify-content: center;
-  align-items: center;
- background: url(../images/bg.svg) center fixed rgba(0, 0, 0, 0.911);
- 
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-  background-position: center;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg.svg) center fixed rgba(0, 0, 0, 0.961);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-position: center;
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  margin-top: 5%;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .card {
-  position: relative;
-  width: 100%;
-
-  /* background: rgba(255, 255, 255, 0.2); */
-  background-color: rgba(255, 255, 255, 0.863);
-  color: black;
-  margin-top: 3%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  /* box-shadow: 0 5px 20px rgba(255, 255, 255, 0.363); */
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0rem;
+    position: relative;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background-color: rgba(255, 255, 255, 0.863);
+    color: black;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* box-shadow: 0 5px 20px rgba(255, 255, 255, 0.363); */
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0rem;
 }
 
 .imgBx1,
 .imgBx2,
 .imgBx3 {
-  position: relative;
-
-  margin-top: 10%;
+    position: relative;
+    margin-top: 10%;
 }
 
 .imgBx1 img,
 .imgBx2 img,
 .imgBx3 img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 4rem;
-  transition: transform 0.5s;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 4rem;
+    transition: transform 0.5s;
 }
 
 img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .container .card .content {
-  margin-top: 2%;
-  position: relative;
-  width: 50%;
-
-  text-align: center;
+    margin-top: 2%;
+    position: relative;
+    width: 50%;
+    text-align: center;
 }
 
 p {
-  line-height: 1;
-  font-size: 18px;
-  font-weight: 500;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 h1 {
-  font-family: "Cairo", sans-serif;
-  margin-top: 5%;
-  font-size: 50px;
-
-  text-align: center;
-  color: #fff;
-  font-weight: bolder;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+    font-family: "Cairo", sans-serif;
+    margin-top: 5%;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes mover {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.2);
-  }
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6,
-      0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
-  }
-
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6,
-      0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
-  }
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
+    }
 }
 
 h2 {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 2s infinite alternate;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 2s infinite alternate;
 }
 
-/* FOOTER */
-
-.footer {
-  position: relative;
-  padding: 0.5rem;
-  width: 100%;
-  height: 10%;
-  margin-top: 10%;
-
-  color: #fff;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
-  font-family: "Cairo", sans-serif;
-}
-
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.last {
-  text-align: center;
-}
-
-.one p,
-.two p,
-.three p,
-.four p {
-  font-size: 15px;
-}
 
 /* MENU BAR STARTS */
+
 .menu-container {
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #161616;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-120vh);
-  z-index: 90;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-120vh);
+    z-index: 90;
 }
 
 .links {
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  flex-direction: column;
-  list-style: none;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+    list-style: none;
 }
 
 .link-item {
-  opacity: 0;
-
-  margin: 0 auto;
+    opacity: 0;
+    margin: 0 auto;
 }
 
 .link-item a {
-  text-decoration: none;
-  font-size: 30px;
-
-  font-family: "Cairo", sans-serif;
-  font-weight: 600;
-  color: white;
-  transition: all 0.2s ease-in-out;
-  background: #161616;
-  z-index: 99;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background: #161616;
+    z-index: 99;
 }
 
 .link-item a:hover {
-  border-bottom: 2px solid #ff00e6;
-  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
-    0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
-    0 0 20px #a026d8;
+    border-bottom: 2px solid #ff00e6;
+    text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255), 0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4, 0 0 20px #a026d8;
 }
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
-  .menu-container {
-    width: 100%;
-  }
-
+    .menu-container {
+        width: 100%;
+    }
 }
