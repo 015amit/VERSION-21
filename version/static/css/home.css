@@ -91,6 +91,20 @@ canvas {
   z-index: 2;
 }
 
+.nitt {
+  color: white;
+  margin: 1rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+#nitt-name {
+  margin-left: 0.5rem;
+  font-size: 15px;
+}
+
 #theme{
   position: absolute;
   width: 827px;
@@ -119,9 +133,7 @@ canvas {
   position: absolute;
   height: 90vh;
   width: 100%;
-
   font-family: "Cairo", sans-serif;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,16 +142,15 @@ canvas {
 
 .link-icon {
   width: 100%;
-  margin-bottom: -2rem;
+  margin-bottom: -4.5rem;
   display: flex;
   align-items: center;
-
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* SOCIAL LINKS */
 .add {
-  margin: 3rem 1.5rem;
+  margin: 3rem 0.5rem;
   height: 55px;
   width: 55px;
   border-radius: 50%;
@@ -161,6 +172,7 @@ canvas {
 .all-link {
   display: none;
   transition: 1s;
+  margin-left: 42rem;
 }
 
 .all-link ul {
@@ -181,7 +193,7 @@ canvas {
   justify-content: center;
   transition: 0.5s;
   cursor: pointer;
-  z-index: 3;
+  z-index: 999;
 }
 
 .all-link ul li i:hover {
@@ -327,7 +339,7 @@ canvas {
     font-size: 40px;
   }
   .link-icon{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
   .hero {
     top: 5%;
@@ -353,6 +365,31 @@ canvas {
     width: 550px;
     top: -1rem;
     left: -5.6rem;
+  }
+  .nitt{
+    width: 60%;
+    margin: 0;
+  }
+  .nitt img{
+    width: 50px;
+  }
+  #nitt-name {
+    margin-left: 0rem;
+    font-size: 12px;
+  }
+  .add {
+    margin: 0 0.5rem;
+    height: 45px;
+    width: 45px;
+  }
+  .all-link {
+    margin-left: -5rem;
+  }
+  .all-link ul {
+    margin-bottom: 0;
+  }
+  .all-link ul li{
+    margin: 4px;
   }
 }
 
