@@ -241,39 +241,6 @@ h1 {
   width: 100%;
 }
 
-/* RESPONSIVE NAV BAR */
-
-.bar {
-  width: 50%;
-  margin-right: 1rem;
-  position: relative;
-}
-
-.bar ul {
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.bar ul li {
-  list-style: none;
-}
-
-.bar ul li a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-.bar ul li:hover {
-  border-bottom: 2px solid #ff00e6;
-  text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255),
-    0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4,
-    0 0 20px #a026d8;
-}
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
