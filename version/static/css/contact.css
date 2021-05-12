@@ -204,6 +204,9 @@ h1 {
   font-weight: bolder;
   font-size: 22px;
 }
+.content p i{
+  margin-right: 1rem;
+}
 
 /* FOOTER */
 .footer {
