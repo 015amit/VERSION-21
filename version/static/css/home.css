@@ -102,28 +102,28 @@ body {
 }
 
 .link-icon {
-    width: 100%;
-    margin-bottom: -3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  width: 100%;
+  /* margin-bottom: -3.5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 
 /* SOCIAL LINKS */
 
 .add {
-    margin: 3rem 0.5rem;
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.5s;
-    z-index: 3;
+  margin: 2rem 0.5rem;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 3;
 }
 
 .add i {
