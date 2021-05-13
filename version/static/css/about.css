@@ -71,7 +71,7 @@ img:hover {
 p {
     line-height: 1;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h1 {
@@ -108,7 +108,9 @@ h2 {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 2s infinite alternate;
 }
-
+.imgBx1 img{
+    object-fit: contain;
+}
 
 /* MENU BAR STARTS */
 
