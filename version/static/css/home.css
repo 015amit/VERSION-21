@@ -156,7 +156,7 @@ body {
     justify-content: center;
     transition: 0.5s;
     cursor: pointer;
-    z-index: 999;
+    z-index: 9;
 }
 
 .all-link ul li i:hover {
