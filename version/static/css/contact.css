@@ -167,10 +167,10 @@ h1 {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #09ccee, 0 0 40px #09ccee;
     }
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
+        text-shadow: 0 0 15px #fff, 0 0 25px #09ccee, 0 0 25px #09ccee, 0 0 45px #09ccee;
     }
 }
 
