@@ -129,7 +129,7 @@ canvas {
 /* RESPONSIVE NAV BAR */
 
 .main {
-  margin-top: -3%;
+  margin-top: -2%;
   position: absolute;
   height: 90vh;
   width: 100%;
@@ -142,7 +142,7 @@ canvas {
 
 .link-icon {
   width: 100%;
-  margin-bottom: -4.5rem;
+  margin-bottom: -3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
