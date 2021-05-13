@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Cairo", sans-serif;
+    /* font-family: "Cairo", sans-serif; */
 }
 
 
@@ -15,7 +15,6 @@ body {
     background-blend-mode: overlay;
     background-position: center;
 }
-
 
 
 /* MENU BAR STARTS */
@@ -119,7 +118,7 @@ body {
 /* HEADING */
 
 h1 {
-    font-family: "Cairo", sans-serif;
+    /* font-family: "Cairo", sans-serif; */
     margin-top: 5%;
     font-size: 50px;
     text-align: center;
@@ -132,7 +131,7 @@ h1 {
 
 @keyframes glow {
     from {
-/*    
+        /*    
           text-shadow: 0 0 10px #fff,
           0 0 20px #fff,
           0 0 30px #8a1ae6,
@@ -141,8 +140,7 @@ h1 {
     }
     to {
         text-shadow: 0 0 15px #fff, 0 0 25px #09ccee, 0 0 25px #09ccee, 0 0 45px #09ccee;
-        
-         /* text-shadow: 0 0 15px #fff,
+        /* text-shadow: 0 0 15px #fff,
          0 0 25px #fff,
          0 0 25px #8a1ae6,
          0 0 45px #a223d4; */
