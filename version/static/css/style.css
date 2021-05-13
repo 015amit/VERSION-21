@@ -1,5 +1,5 @@
 body {
-    font-family: 'Bellota', cursive;
+    font-family: 'Bellota', 'Belgrano', serif;
 }
 
 #logo-name {
@@ -42,15 +42,11 @@ body {
     border-radius: 50%;
     border: 2px solid whitesmoke;
     z-index: 100;
-    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    /* box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
-    0 0 8px #ae11ec, 0 0 5px #8a2be2, 0 0 8px #8a1ae6, inset 0 0 5px #a223d4,
-    0 0 8px #a026d8; */
     box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255), 0 0 8px #09ccee, 0 0 5px #09ccee, 0 0 8px #09ccee, inset 0 0 5px #09ccee, 0 0 8px #09ccee;
 }
 
@@ -85,7 +81,6 @@ body {
 .link-item a {
     text-decoration: none;
     font-size: 30px;
-    /* font-family: "Cairo", sans-serif; */
     font-weight: 600;
     color: white;
     transition: all 0.2s ease-in-out;
@@ -110,7 +105,6 @@ body {
 }
 
 .link-item a:hover {
-    /* border-bottom: 2px solid #b400a2; */
     text-shadow: 0 0 10px #09ccee, 0 0 4px rgb(213, 161, 255), 0 0 20px, 0 0 10px #09ccee, 0 0 20px #09ccee, 0 0 5px #09ccee, 0 0 20px#09ccee;
 }
 
