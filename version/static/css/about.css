@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Cairo", sans-serif;
+    /* font-family: "Cairo", sans-serif; */
 }
 
 
@@ -35,7 +35,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
-
     /* box-shadow: 0 5px 20px rgba(255, 255, 255, 0.363); */
     align-items: center;
     justify-content: space-evenly;
@@ -76,7 +75,7 @@ p {
 }
 
 h1 {
-    font-family: "Cairo", sans-serif;
+    /* font-family: "Cairo", sans-serif; */
     margin-top: 5%;
     font-size: 50px;
     text-align: center;
@@ -126,8 +125,6 @@ h2 {
     transform: translateY(-120vh);
     z-index: 90;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .menu-container {

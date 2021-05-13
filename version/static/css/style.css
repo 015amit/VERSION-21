@@ -1,144 +1,124 @@
+body {
+    font-family: 'Bellota', cursive;
+}
 
 #logo-name {
-  margin-left: 0.5rem;
-  font-size: 15px;
+    margin-left: 0.5rem;
+    font-size: 15px;
 }
 
 .Navbar {
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-  color: white;
-  margin: 1rem;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 80;
+    color: white;
+    margin: 1rem;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 80;
 }
-.left{
-      width: 45%;
-      
-      display: flex;
-      align-items: center;
-    
-      justify-content: flex-end;
+
+.left {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.left img{
-  z-index: 2;
+
+.left img {
+    z-index: 2;
 }
+
 .humberger {
-  margin: 35px 20px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 2px solid whitesmoke;
-  z-index: 100;
-  /* display: none; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  /* box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
+    margin: 35px 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    z-index: 100;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
     0 0 8px #ae11ec, 0 0 5px #8a2be2, 0 0 8px #8a1ae6, inset 0 0 5px #a223d4,
     0 0 8px #a026d8; */
-     box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255),
-    0 0 8px #09ccee,
-    0 0 5px #09ccee,
-    0 0 8px #09ccee,
-    inset 0 0 5px #09ccee,
-    0 0 8px #09ccee;
-    
+    box-shadow: 0 0 4px rgb(194, 128, 255), inset 0 0 4px rgb(213, 161, 255), 0 0 8px #09ccee, 0 0 5px #09ccee, 0 0 8px #09ccee, inset 0 0 5px #09ccee, 0 0 8px #09ccee;
 }
 
 .line1,
 .line2 {
-  height: 2px;
-  width: 27px;
-  background: rgba(233, 233, 233, 0.788);
-  margin-bottom: 5px;
-  transition: all 0.3s ease-out;
+    height: 2px;
+    width: 27px;
+    background: rgba(233, 233, 233, 0.788);
+    margin-bottom: 5px;
+    transition: all 0.3s ease-out;
 }
 
 .line2 {
-  margin: 5px 0px 0px;
+    margin: 5px 0px 0px;
 }
 
 .links {
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  flex-direction: column;
-  list-style: none;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+    list-style: none;
 }
 
 .link-item {
-  opacity: 0;
-  margin: 0 auto;
+    opacity: 0;
+    margin: 0 auto;
 }
 
 .link-item a {
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Cairo", sans-serif;
-  font-weight: 600;
-  color: white;
-  transition: all 0.2s ease-in-out;
-  background: #161616;
-  z-index: 99;
-}
-.link-item a::before {
-  content: "";
-  height: 3px;
-  width: 0vw;
-  position: absolute;
-  margin-top: 30px;
-  right: 0;
-  background: #09ccee;
-  z-index: -1;
-  transition: width 0.4s ease-out;
+    text-decoration: none;
+    font-size: 30px;
+    /* font-family: "Cairo", sans-serif; */
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background: #161616;
+    z-index: 99;
 }
 
-.link-item  a:hover::before {
-  width: 100%;
+.link-item a::before {
+    content: "";
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    margin-top: 30px;
+    right: 0;
+    background: #09ccee;
+    z-index: -1;
+    transition: width 0.4s ease-out;
+}
+
+.link-item a:hover::before {
+    width: 100%;
 }
 
 .link-item a:hover {
-  /* border-bottom: 2px solid #b400a2; */
-
-  text-shadow: 0 0 10px #09ccee,
-  0 0 4px rgb(213, 161, 255),
-  0 0 20px ,
-  0 0 10px #09ccee,
-  0 0 20px #09ccee,
-  0 0 5px #09ccee,
-  0 0 20px#09ccee;
+    /* border-bottom: 2px solid #b400a2; */
+    text-shadow: 0 0 10px #09ccee, 0 0 4px rgb(213, 161, 255), 0 0 20px, 0 0 10px #09ccee, 0 0 20px #09ccee, 0 0 5px #09ccee, 0 0 20px#09ccee;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
- #versionlogo{
-   width: 100px;
- }
- #mca{
-   width: 54px;
- }
-
- } 
-
-
-
+    #versionlogo {
+        width: 100px;
+    }
+    #mca {
+        width: 54px;
+    }
+}
