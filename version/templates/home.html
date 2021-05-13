@@ -1,54 +1,69 @@
 {% extends "base.html" %} {% block header %}
 
 <title>{{title}}</title>
-<link rel="stylesheet" href="static/css/home.css" /> {% endblock %} {% block content %}
+<link rel="stylesheet" href="static/css/home.css" /> {% endblock %} {% block
+content %}
 
-<!-- <div id="particles-js"> -->
-    <div class="main">
-        <div id="text">
-            <h1 id="soon">
-                <span id="offset">C</span>om<span id="offset">ing</span> S<span id="offset">oon!</span
-        >
-      </h1>
+<div class="main">
+  <div id="text">
+    <h1 id="soon">
+      <span id="offset">C</span>om<span id="offset">ing</span> S<span
+        id="offset"
+        >oon!</span
+      >
+    </h1>
+  </div>
+
+  <div class="link-icon">
+    <div class="all-link">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/versionmeet" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/version_nit_trichy/"
+            target="_blank"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCtD7JZ4zH72M8lSzo1y89gQ"
+            target="_blank"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+        </li>
+      </ul>
     </div>
 
-    
-
-    <div class="link-icon">
-      <!-- <div class="nitt">
-        <img src="static/images/nitt.png" alt="NO" width="60px" />
-        <h4 id="nitt-name">
-          NATIONAL INSTITUTE OF TECHNOLOGY, TIRUCHIRAPPALLI
-        </h4>
-      </div> -->
-      <div class="all-link">
-        <ul>
-          <li><a href="https://www.facebook.com/versionmeet" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://www.instagram.com/version_nit_trichy/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCtD7JZ4zH72M8lSzo1y89gQ" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="add">
-        <i class="fas fa-bezier-curve" id="add1"></i>
-        <i class="fas fa-times" style="display: none" id="add2"></i>
-      </div>
+    <div class="add">
+      <i class="fas fa-bezier-curve" id="add1"></i>
+      <i class="fas fa-times" style="display: none" id="add2"></i>
     </div>
+  </div>
 
-    <div class="hero">
-      <h1>
-        <span class="V" style="font-size: 40px; text-align: center">
-          <img src="static/images/logo2.png" height="120px" width="350px" />
-        </span>
-            </h1>
-            <p class="tagline" style="text-align: center">presents</p>
-            <img id="theme" src="../static/images/theme.png" alt="">
+  <div class="hero">
+    <h1>
+      <span class="V" style="font-size: 40px; text-align: center">
+        <img src="static/images/logo2.png" height="120px" width="350px" />
+      </span>
+    </h1>
+    <p class="tagline" style="text-align: center">presents</p>
+    <img id="theme" src="../static/images/theme.png" alt="" />
+  </div>
+</div>
 
-        </div>
-    </div>
-<!-- </div> -->
-
-<!-- <svg class="svg-right" width="352" height="384" viewBox="0 0 652 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  class="svg-right"
+  width="352"
+  height="384"
+  viewBox="0 0 652 484"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"
@@ -403,10 +418,9 @@
       <stop offset="1" stop-color="#8D1CCB" />
     </linearGradient>
   </defs>
-</svg> -->
+</svg>
+-->
 
 <script src="static/js/home.js"></script>
-<script src="static/js/particles.js"></script>
-<script src="static/js/app.js"></script>
 
 {% endblock %}

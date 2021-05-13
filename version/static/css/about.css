@@ -127,36 +127,7 @@ h2 {
     z-index: 90;
 }
 
-.links {
-    height: 70%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
-    flex-direction: column;
-    list-style: none;
-}
 
-.link-item {
-    opacity: 0;
-    margin: 0 auto;
-}
-
-.link-item a {
-    text-decoration: none;
-    font-size: 30px;
-    font-family: "Cairo", sans-serif;
-    font-weight: 600;
-    color: white;
-    transition: all 0.2s ease-in-out;
-    background: #161616;
-    z-index: 99;
-}
-
-.link-item a:hover {
-    border-bottom: 2px solid #ff00e6;
-    text-shadow: 0 0 10px rgb(194, 128, 255), 0 0 4px rgb(213, 161, 255), 0 0 20px #ae11ec, 0 0 10px #8a2be2, 0 0 20px #8a1ae6, 0 0 5px #a223d4, 0 0 20px #a026d8;
-}
 
 @media screen and (max-width: 768px) {
     .menu-container {

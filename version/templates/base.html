@@ -27,7 +27,6 @@
 
     <link rel="stylesheet" href="static/css/style.css" />
     {% block header %} {% endblock %}
-    
   </head>
 
   <body>
@@ -35,34 +34,37 @@
     <div class="Navbar">
       <div class="logo">
         <img src="static/images/nitt.png" alt="NO" width="50px" />
-        <a href="/"><img src="static/images/logo2.png" alt="NO" width="130px" /></a>
-      </div>
-      <div class="bar">
-        <ul>
-          <li><a class="bar-item" href="/">HOME</a></li>
-          <!-- <li><a class="bar-item">EVENTS</a></li> -->
-          <!-- <li><a class="bar-item">TEAMS</a></li> -->
-          <!-- <li><a class="bar-item">SPONSERS</a></li> -->
-          <!-- <li><a class="bar-item">REGISTRATION</a></li> -->
-          <li><a class="bar-item" href="/about">ABOUT</a></li>
-          <li><a class="bar-item" href="/contact">CONTACT</a></li>
-          <img style="margin-left: 20px;" src="static/images/mcalogo.png" width="80px" alt="">
-        </ul>
+        <a href="/"
+          ><img
+            id="versionlogo"
+            src="static/images/logo2.png"
+            alt="NO"
+            width="130px"
+        /></a>
       </div>
 
-      <div class="humberger">
-        <div class="line1"></div>
-        <div class="line2"></div>
+      <div class="left">
+        <img
+          id="mca"
+          style="margin-left: 20px; z-index: 2"
+          src="static/images/mcalogo.png"
+          width="80px"
+          alt=""
+        />
+        <div class="humberger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
       </div>
     </div>
 
     <div class="menu-container">
       <ul class="links">
         <li class="link-item"><a href="/">HOME</a></li>
-        <li class="link-item"><a href="#">EVENTS</a></li>
-        <li class="link-item"><a href="#">TEAMS</a></li>
-        <li class="link-item"><a href="#">SPONSERS</a></li>
-        <li class="link-item"><a href="#">REGISTRATION</a></li>
+        <!-- <li class="link-item"><a href="#">EVENTS</a></li> -->
+        <!-- <li class="link-item"><a href="#">TEAMS</a></li> -->
+        <!-- <li class="link-item"><a href="#">SPONSERS</a></li> -->
+        <!-- <li class="link-item"><a href="#">REGISTRATION</a></li> -->
         <li class="link-item"><a href="/about">ABOUT</a></li>
         <li class="link-item"><a href="/contact">CONTACT</a></li>
       </ul>
